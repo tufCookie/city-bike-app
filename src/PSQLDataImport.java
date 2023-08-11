@@ -21,7 +21,7 @@ public class PSQLDataImport {
             Class.forName("org.postgresql.Driver");
             System.out.println("Connecting to the database bike data at localhost:5432/bike data....");
             connection = DriverManager.getConnection("jdbc:postgresql://localhost:5432/bike-data",
-                    "postgres", "rooty@420");
+                    "postgres", "rooty@");
             System.out.println("Success: Connected to jdbc:postgresql://localhost:5432/bike-data.");
             System.out.println("Reading and entering data to the database...");
             success = EnterDataIntoDatabase(connection, fileLocation);
